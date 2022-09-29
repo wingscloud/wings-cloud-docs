@@ -132,11 +132,41 @@ export default defineConfig({
         },
         {
           text: '方法使用',
-          items: [],
+          items: [
+            {
+              text: 'app-storage.ts',
+              link: '/usage/storage.md',
+            },
+            {
+              text: 'app-request.ts',
+              link: '/usage/request.md',
+            },
+            {
+              text: 'app-auto.ts',
+              link: '/usage/auto.md',
+            },
+            {
+              text: 'app-error.ts',
+              link: '/usage/error.md',
+            },
+            {
+              text: 'app-reg-exp.ts',
+              link: '/usage/reg-exp.md',
+            },
+          ],
         },
         {
           text: '组件',
-          items: [],
+          items: [
+            {
+              text: 'app-svg-icon',
+              link: '/usage/svg-icon.md',
+            },
+            {
+              text: 'app-dialog',
+              link: '/usage/dialog.md',
+            },
+          ],
         },
         {
           text: '其他',
