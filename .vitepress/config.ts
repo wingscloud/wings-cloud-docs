@@ -181,7 +181,20 @@ export default defineConfig({
       '/options/': [
         {
           text: '配置',
-          items: [],
+          items: [
+            {
+              text: '环境变量',
+              link: '/options/env.md',
+            },
+            {
+              text: '枚举',
+              link: '/options/enum.md',
+            },
+            {
+              text: '构建选项',
+              link: '/options/build.md',
+            },
+          ],
         },
       ],
     },
