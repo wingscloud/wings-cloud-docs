@@ -17,8 +17,8 @@
 }
 
 :root {
-  --c-brand: #0d6efd;
-  --c-brand-light: #0d6efd;
+  --c-brand: #b90b0b;
+  --c-brand-light: #b90b0b;
 }
 
 .custom-block.tip {
@@ -81,4 +81,13 @@
     right: 10px;
     margin: 0;
   }
+}
+
+.image-src {
+  max-width: 44% !important;
+  border-radius: 20px;
+}
+
+.VPHero {
+  padding: calc(var(--vp-nav-height) + 120px) 64px 64px !important;
 }

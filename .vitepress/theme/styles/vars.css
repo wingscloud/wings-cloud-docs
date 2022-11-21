@@ -1,11 +1,11 @@
 :root {
-  --vp-c-brand: #0d6efd;
-  --vp-c-brand-light: #569afe;
-  --vp-c-brand-lighter: #86b7fe;
-  --vp-c-brand-lightest: #b6d4fe;
-  --vp-c-brand-dark: #0a58ca;
-  --vp-c-brand-darker: #0000cd;
-  --vp-c-brand-dimm: rgba(13, 110, 253, 0.08);
+  --vp-c-brand: #b90b0b;
+  --vp-c-brand-light: #c73c3c;
+  --vp-c-brand-lighter: #d56d6d;
+  --vp-c-brand-lightest: #eab6b6;
+  --vp-c-brand-dark: #b90b0b;
+  --vp-c-brand-darker: #940909;
+  --vp-c-brand-dimm: rgba(185, 11, 11, 0.08);
 }
 
 :root {
@@ -22,9 +22,9 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0d6efd 30%, #76ddfb);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #b90b0b 30%, #eab6b6);
 
-  --vp-home-hero-image-background-image: linear-gradient(-45deg, #0d6efd 50%, #76ddfb 50%);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #b90b0b 50%, #c73c3c 50%);
   --vp-home-hero-image-filter: blur(40px);
 }
 

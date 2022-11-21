@@ -4,14 +4,14 @@ import MarkDownItCustomAnchor from './markdown-it-custom-anchor'
 
 const ogDescription = '构建高效、可扩展的 Web 微服务应用程序'
 const ogTitle = 'Wings Cloud'
-const ogUrl = 'https://github.com/kaivanwong/wings-cloud'
+const ogUrl = 'https://github.com/wingscloud'
 
 export default defineConfig({
-  title: 'Wings Vue 中文文档',
-  description: '面向 Vue + Element Plus 生态的一款 RBAC 权限管理系统，提供工程化的开发体验和开箱即用的页面模板。',
+  title: 'Wings Cloud',
+  description: '使用 TypeScript & JavaScript 构建高效、可扩展的企业级应用程序',
   lang: 'zh-CN',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: ogTitle }],
     ['meta', { property: 'og:url', content: ogUrl }],
@@ -24,35 +24,61 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/favicon.svg',
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/kaivanwong/wings-vue' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/wingscloud' }],
 
     nav: [
-      { text: '使用文档', link: '/usage/before', activeMatch: '/usage/' },
-      { text: '配置文档', link: '/options/', activeMatch: '/options/' },
+      { text: '指引', link: '/guide/start', activeMatch: '/guide/' },
+      { text: '配置文档', link: '/config/', activeMatch: '/config/' },
+      { text: '插件集成', link: '/plugins/', activeMatch: '/plugins/' },
+      {
+        text: '生态产品',
+        items: [
+          {
+            text: 'Wings Cloud Admin',
+            link: 'https://github.com/wingscloud/wings-cloud-admin',
+          },
+          {
+            text: 'Wings Cloud Web',
+            link: 'https://github.com/wingscloud/wings-cloud-web',
+          },
+          {
+            text: 'Wings Cloud Service',
+            link: 'https://github.com/wingscloud/wings-cloud-service',
+          },
+          {
+            text: 'Wings Cloud Cli',
+            link: 'https://github.com/wingscloud/wings-cloud-cli',
+          },
+        ],
+      },
       {
         text: '在线演示',
         items: [
           {
-            text: 'Netlify 部署版',
-            link: 'https://wings-demo.netlify.app',
+            text: 'Wings Cloud Admin',
+            link: 'https://wings-cloud-admin.netlify.app',
+          },
+          {
+            text: 'Wings Cloud Web',
+            link: 'https://wings-cloud-web.netlify.app',
           },
         ],
       },
     ],
     sidebar: {
-      '/usage/': [
+      '/guide/': [
         {
           text: '指引',
           items: [
             {
-              text: '写在使用之前',
-              link: '/usage/before.md',
+              text: '为什么选 Wings Cloud',
+              link: '/usage/why.md',
             },
             {
-              text: '准备工作',
-              link: '/usage/preparatory.md',
+              text: '开始',
+              link: '/usage/start.md',
             },
           ],
         },
@@ -66,114 +92,6 @@ export default defineConfig({
             {
               text: '安装',
               link: '/usage/install.md',
-            },
-            {
-              text: '设计风格',
-              link: '/usage/code.md',
-            },
-            {
-              text: '主题颜色',
-              link: '/usage/theme.md',
-            },
-            {
-              text: '布局',
-              link: '/usage/layout.md',
-            },
-            {
-              text: '代码规范',
-              link: '/usage/code.md',
-            },
-            {
-              text: '环境变量',
-              link: '/usage/env.md',
-            },
-            {
-              text: '权限管理',
-              link: '/usage/auth.md',
-            },
-          ],
-        },
-        {
-          text: '功能使用',
-          items: [
-            {
-              text: '国际化',
-              link: '/usage/i18n.md',
-            },
-            {
-              text: '路由（导航）',
-              link: '/usage/router.md',
-            },
-            {
-              text: '网络请求',
-              link: '/usage/http.md',
-            },
-            {
-              text: '全局状态管理',
-              link: '/usage/store.md',
-            },
-            {
-              text: '模拟数据',
-              link: '/usage/mock.md',
-            },
-            {
-              text: '组件库',
-              link: '/usage/components.md',
-            },
-            {
-              text: '样式引擎',
-              link: '/usage/css.md',
-            },
-            {
-              text: '构建编译',
-              link: '/usage/build.md',
-            },
-          ],
-        },
-        {
-          text: '方法使用',
-          items: [
-            {
-              text: 'app-storage.ts',
-              link: '/usage/storage.md',
-            },
-            {
-              text: 'app-request.ts',
-              link: '/usage/request.md',
-            },
-            {
-              text: 'app-auto.ts',
-              link: '/usage/auto.md',
-            },
-            {
-              text: 'app-error.ts',
-              link: '/usage/error.md',
-            },
-            {
-              text: 'app-reg-exp.ts',
-              link: '/usage/reg-exp.md',
-            },
-          ],
-        },
-        {
-          text: '组件',
-          items: [
-            {
-              text: 'app-svg-icon',
-              link: '/usage/svg-icon.md',
-            },
-            {
-              text: 'app-dialog',
-              link: '/usage/dialog.md',
-            },
-          ],
-        },
-        {
-          text: '其他',
-          items: [
-            {
-              text: '图标',
-              link: '/usage/icon.md',
             },
           ],
         },
