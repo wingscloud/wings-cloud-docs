@@ -1,8 +1,8 @@
 {
   "name": "wings-cloud-docs",
   "version": "0.1.1",
-  "description": "Wings Vue 中文文档",
-  "repository": "https://github.com/kaivanwong/wings-vue-docs",
+  "description": "Wings Cloud 中文使用文档",
+  "repository": "https://github.com/wingscloud/wings-cloud-docs",
   "author": "Kaivan Wong",
   "private": true,
   "devDependencies": {
