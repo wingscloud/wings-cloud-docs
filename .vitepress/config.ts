@@ -66,6 +66,7 @@ export default defineConfig({
           },
         ],
       },
+      { text: '更新指南', link: '/update/', activeMatch: '/update/' },
     ],
     sidebar: {
       '/guide/': [
