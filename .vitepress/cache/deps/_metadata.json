@@ -1,0 +1,23 @@
+{
+  "hash": "7d169711",
+  "browserHash": "24493567",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "57096934",
+      "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../../node_modules/.pnpm/element-plus@2.2.28_vue@3.2.45/node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "5b0c460e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-PC5UTUWE": {
+      "file": "chunk-PC5UTUWE.js"
+    }
+  }
+}

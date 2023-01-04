@@ -1,8 +1,8 @@
 {
-  "name": "wings-cloud-docs",
+  "name": "docs-zh-cn",
   "version": "0.1.1",
-  "description": "Wings Cloud 中文使用文档",
-  "repository": "https://github.com/wingscloud/wings-cloud-docs",
+  "description": "Wings Cloud 官方文档",
+  "repository": "https://github.com/wingscloud/docs-zh-cn",
   "author": "Kaivan Wong",
   "private": true,
   "devDependencies": {

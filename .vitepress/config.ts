@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 import renderPermaLink from './render-perma-link'
 import MarkDownItCustomAnchor from './markdown-it-custom-anchor'
 
-const ogDescription = '构建高效、可扩展的 Web 微服务应用程序'
+const ogDescription = '使用 TypeScript & JavaScript 构建高效、可扩展的多端应用程序'
 const ogTitle = 'Wings Cloud'
 const ogUrl = 'https://github.com/wingscloud'
 
 export default defineConfig({
   title: 'Wings Cloud',
-  description: '使用 TypeScript & JavaScript 构建高效、可扩展的企业级应用程序',
+  description: '使用 TypeScript & JavaScript 构建高效、可扩展的多端应用程序',
   lang: 'zh-CN',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
@@ -16,7 +16,7 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: ogTitle }],
     ['meta', { property: 'og:url', content: ogUrl }],
     ['meta', { property: 'og:description', content: ogDescription }],
-    ['meta', { name: 'theme-color', content: '#B90B0B' }],
+    ['meta', { name: 'theme-color', content: '#b90b0b' }],
   ],
 
   vue: {
@@ -30,26 +30,32 @@ export default defineConfig({
 
     nav: [
       { text: '指引', link: '/guide/start', activeMatch: '/guide/' },
-      { text: '配置文档', link: '/config/', activeMatch: '/config/' },
-      { text: '插件集成', link: '/plugins/', activeMatch: '/plugins/' },
       {
         text: '生态产品',
         items: [
           {
-            text: 'Wings Cloud Admin',
-            link: 'https://github.com/wingscloud/wings-cloud-admin',
+            text: 'RBAC Admin Web',
+            link: 'https://github.com/wingscloud/rbac-admin-web',
           },
           {
-            text: 'Wings Cloud Web',
-            link: 'https://github.com/wingscloud/wings-cloud-web',
+            text: 'RBAC Admin Service',
+            link: 'https://github.com/wingscloud/rbac-admin-service',
           },
           {
-            text: 'Wings Cloud Service',
-            link: 'https://github.com/wingscloud/wings-cloud-service',
+            text: 'Portal Website',
+            link: 'https://github.com/wingscloud/portal-website',
           },
           {
-            text: 'Wings Cloud Cli',
-            link: 'https://github.com/wingscloud/wings-cloud-cli',
+            text: 'Shop Weapp',
+            link: 'https://github.com/wingscloud/shop-weapp',
+          },
+          {
+            text: 'Wash Car Weapp',
+            link: 'https://github.com/wingscloud/wash-car-weapp',
+          },
+          {
+            text: 'Talks App',
+            link: 'https://github.com/wingscloud/talks-app',
           },
         ],
       },
@@ -57,16 +63,11 @@ export default defineConfig({
         text: '在线演示',
         items: [
           {
-            text: 'Wings Cloud Admin',
-            link: 'https://wings-cloud-admin.netlify.app',
-          },
-          {
-            text: 'Wings Cloud Web',
-            link: 'https://wings-cloud-web.netlify.app',
+            text: 'RBAC Admin',
+            link: 'https://rbac-admin.netlify.app',
           },
         ],
       },
-      { text: '更新指南', link: '/update/', activeMatch: '/update/' },
     ],
     sidebar: {
       '/guide/': [
@@ -74,44 +75,50 @@ export default defineConfig({
           text: '指引',
           items: [
             {
-              text: '为什么选 Wings Cloud',
-              link: '/usage/why.md',
+              text: 'Wings Cloud 是什么？',
+              link: '/guide/what',
             },
             {
-              text: '开始',
-              link: '/usage/start.md',
+              text: '快速开始',
+              link: '/guide/start',
             },
           ],
         },
         {
-          text: '快速上手',
+          text: '生态产品',
           items: [
             {
-              text: '下载',
-              link: '/usage/download.md',
+              text: 'RBAC Admin Web',
+              link: 'https://github.com/wingscloud/rbac-admin-web',
             },
             {
-              text: '安装',
-              link: '/usage/install.md',
+              text: 'RBAC Admin Service',
+              link: 'https://github.com/wingscloud/rbac-admin-service',
+            },
+            {
+              text: 'Portal Website',
+              link: 'https://github.com/wingscloud/portal-website',
+            },
+            {
+              text: 'Shop Weapp',
+              link: 'https://github.com/wingscloud/shop-weapp',
+            },
+            {
+              text: 'Wash Car Weapp',
+              link: 'https://github.com/wingscloud/wash-car-weapp',
+            },
+            {
+              text: 'Talks App',
+              link: 'https://github.com/wingscloud/talks-app',
             },
           ],
         },
-      ],
-      '/options/': [
         {
-          text: '配置',
+          text: '在线演示',
           items: [
             {
-              text: '环境变量',
-              link: '/options/env.md',
-            },
-            {
-              text: '枚举',
-              link: '/options/enum.md',
-            },
-            {
-              text: '构建选项',
-              link: '/options/build.md',
+              text: 'RBAC Admin',
+              link: 'https://rbac-admin.netlify.app',
             },
           ],
         },
